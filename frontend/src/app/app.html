@@ -1,0 +1,13 @@
+<header *ngIf="!isLoginPage" class="header-bg">
+  <nav class="nav-menu">
+    <ul>
+      <li><a routerLink="/home">HOME</a></li>
+      <li><a routerLink="/formulario">Formulario de adopción</a></li>
+      <li><a routerLink="/sugerencia">Sugerencia de Adopcion</a></li>
+      <li><a routerLink="/galeria">Galería de mascotas</a></li>
+      <li><a routerLink="/login">LogOut</a></li>
+    </ul>
+  </nav>
+</header>
+
+<router-outlet></router-outlet>

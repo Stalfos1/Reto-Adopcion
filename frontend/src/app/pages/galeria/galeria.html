@@ -1,0 +1,23 @@
+<div class="galeria-container">
+  <h2>Galería de Mascotas</h2>
+
+  <p *ngIf="error" class="error">{{ error }}</p>
+
+  <div class="mascotas-grid">
+    <div *ngFor="let mascota of mascotas" class="mascota-card">
+      <img
+        [src]="mascota.foto ? '/' + mascota.foto : '/images/default.jpg'"
+        alt="{{ mascota.nombre }}"
+        class="mascota-img"
+      />
+      <h3>{{ mascota.nombre }}</h3>
+      <p>{{ mascota.descripcion }}</p>
+      <div class="hover-details">
+        <p><strong>Especie:</strong> {{ mascota.especie }}</p>
+        <p><strong>Edad:</strong> {{ mascota.edad }} años</p>
+        <p><strong>Tamaño:</strong> {{ mascota['tamaño'] }}</p>
+        <p><strong>Peso:</strong> {{ mascota.peso }} kg</p>
+      </div>
+    </div>
+  </div>
+</div>

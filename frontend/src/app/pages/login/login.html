@@ -1,0 +1,13 @@
+<div class="login-wrap">
+  <h2>Login</h2>
+  <div class="form">
+    <input
+      type="number"
+      placeholder="ID de Persona"
+      [(ngModel)]="personaId"
+      name="personaId"
+      min="1"
+    />
+    <button (click)="login()">Sign in</button>
+  </div>
+</div>

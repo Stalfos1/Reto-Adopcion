@@ -1,0 +1,22 @@
+.home-container {
+  height: 100vh;
+  text-align: center;
+}
+
+.home-container h2 {
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+.home-container p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.home-container strong {
+  color: #2c3e50;
+}
+.reputacion-img {
+  width: 200px;    
+  margin-top: 15px;
+}
