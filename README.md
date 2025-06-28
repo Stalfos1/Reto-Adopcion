@@ -23,11 +23,11 @@ Este sistema es un prototipo de una plataforma donde:
 ✅ **Sugerencias de mascotas** basadas en el tipo de vivienda (casa, departamento, patio).  
 ✅ **Registro de adopciones y seguimiento** (vacunas, esterilización, fotos de progreso).  
 ✅ **Indicador de reputación del adoptante**, que muestra una imagen especial según su etiqueta:
-   - Adoptante Ejemplar 🟢 → ![excelente.jpg](public/images/excelente.jpg)
-   - En riesgo de abandono 🟡 → ![mediocre.jpg](public/images/mediocre.jpg)
-   - Nuevo adoptante 🔵 → ![new.png](public/images/new.png)
+   - Adoptante Ejemplar 🟢 → ![excelente.jpg](backend/public/images/excelente.jpg)
+   - En riesgo de abandono 🟡 → ![mediocre.jpg](backend/public/images/mediocre.jpg)
+   - Nuevo adoptante 🔵 → ![new.png](backend/public/images/new.png)
 
-✅ **API REST** con endpoints claros:
+✅ **API REST** endpoints:
 - `/api/personas` para CRUD de personas.
 - `/api/mascotas` para listar mascotas.
 - `/api/mascotas-sugeridas/:personaId` para sugerencias.
@@ -42,6 +42,25 @@ Este sistema es un prototipo de una plataforma donde:
 ✅ **Base de datos SQLite** embebida para persistencia de datos.
 
 ---
+
+📁 Estructura del Proyecto
+Este proyecto se divide en dos grandes partes:
+
+🔙 Backend
+index.js: Archivo principal de Express donde se definen y exponen las APIs REST.
+
+public/images: Carpeta pública para alojar imágenes de reputación y mascotas.
+
+adopcion_mascota_db.sqlite: Contiene la base de datos SQLite con las tablas de usuarios, mascotas y adopciones.
+
+🔜 Frontend
+/src/app/pages: Módulos de Angular organizados por páginas (login, home, galería, sugerencias, etc.).
+
+Utiliza Angular Standalone API, Router y PrimeNG para los componentes de interfaz.
+
+Se sirve de forma estática desde el servidor Express.
+
+
 
 ## ⚙️ Tecnologías utilizadas
 
